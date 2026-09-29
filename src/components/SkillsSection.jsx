@@ -118,7 +118,7 @@ export default function SkillsSection() {
         {/* Course Grid */}
         <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {courses.map(course => (
-            <div key={course.id} className="bg-white border border-[#E8E8EA] rounded-[28px] p-4 sm:p-4 hover:shadow-xl hover:shadow-black/5 transition-all duration-300">
+            <div key={course.id} className="bg-white border border-[#CED0D3] rounded-[28px] p-4 sm:p-4 hover:shadow-xl hover:shadow-black/5 transition-all duration-300">
               
               {/* Image Container */}
               <div className="relative w-[341px] h-[196] aspect-[1.45] rounded-[20px] overflow-hidden">

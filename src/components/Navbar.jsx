@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <header className="relative w-full z-50">
-      <div className="w-full h-[80px] md:h-[120px] flex items-center justify-between px-5 sm:px-8 md:px-16 max-w-[1440px] mx-auto text-white">
+      <div className="w-full h-[80px] md:h-[120px] flex items-center justify-between px-5 sm:px-8 md:px-16 max-w-[1240px] mx-auto text-white">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image

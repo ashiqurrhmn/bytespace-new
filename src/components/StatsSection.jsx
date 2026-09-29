@@ -11,7 +11,7 @@ export default function StatsSection() {
 
   return (
     <section className="w-full bg-[#F5F5F6] py-8 sm:py-12 flex justify-center items-center overflow-hidden">
-      <div className="w-full max-w-[1440px] px-6 flex flex-wrap justify-center sm:justify-between items-center gap-8 sm:gap-4 md:gap-12 lg:gap-14 opacity-70 grayscale">
+      <div className="w-full max-w-[1240px] px-6 flex flex-wrap justify-center sm:justify-between items-center gap-8 sm:gap-4 md:gap-12 lg:gap-14 opacity-70 grayscale">
         
         {logos.map((logo, index) => (
           <div key={index} className="flex items-center gap-2">
