@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function SignIn() {
+export default function SignUp() {
   return (
     <div className="min-h-screen w-full flex flex-col lg:flex-row bg-[#003BE2] font-satoshi relative overflow-hidden">
       
@@ -25,10 +25,10 @@ export default function SignIn() {
         {/* Text Content */}
         <div className="max-w-[450px]">
           <h1 className="font-[var(--font-poppins)] text-[28px] sm:text-[32px] font-bold text-white mb-4 leading-[1.2]">
-            Sign in with ease
+            Sign up and come in
           </h1>
           <p className="text-white/80 text-[15px] sm:text-[16px] leading-relaxed">
-            Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge.
+            The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost
           </p>
         </div>
 
@@ -68,12 +68,22 @@ export default function SignIn() {
       <div className="flex-1 flex items-center justify-center lg:justify-end px-6 sm:px-16 lg:pr-24 xl:pr-32 relative z-10 py-12">
         <div className="w-full max-w-[500px] bg-white rounded-[32px] p-8 sm:p-12 shadow-2xl">
           
-          <span className="block text-[14px] font-medium text-[#0055FF] mb-2">Sign In</span>
+          <span className="block text-[14px] font-medium text-[#0055FF] mb-2">Create an Account</span>
           <h2 className="font-[var(--font-poppins)] text-[32px] sm:text-[38px] font-bold text-[#1A1D27] mb-10">
-            Welcome Back
+            Welcome to ByteSpace
           </h2>
 
           <form className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
+              <label className="text-[13px] font-medium text-[#4B4C53]">Full Name</label>
+              <input 
+                type="text" 
+                placeholder="Jamie Davis" 
+                className="w-full h-[52px] px-5 rounded-[12px] border border-[#E8E8EA] text-[#1A1D27] placeholder:text-[#A0A4AB] text-[15px] focus:outline-none focus:border-[#0055FF] transition-all"
+                required
+              />
+            </div>
+
             <div className="flex flex-col gap-2">
               <label className="text-[13px] font-medium text-[#4B4C53]">Email</label>
               <input 
@@ -99,30 +109,15 @@ export default function SignIn() {
                 type="submit" 
                 className="h-[48px] px-8 bg-[#D4FB20] text-[#1A1D27] font-semibold text-[15px] rounded-full hover:bg-[#c5ec15] transition-colors"
               >
-                Sign In
+                Continue
               </button>
             </div>
           </form>
 
-          <div className="flex items-center gap-4 my-10">
-            <div className="flex-1 h-[1px] bg-[#E8E8EA]"></div>
-            <span className="text-[13px] text-[#A0A4AB]">or</span>
-            <div className="flex-1 h-[1px] bg-[#E8E8EA]"></div>
-          </div>
-
-          <div className="flex justify-center gap-4">
-            <button className="w-[52px] h-[52px] flex items-center justify-center border border-[#E8E8EA] rounded-full hover:bg-gray-50 transition-colors group">
-              <Image src="/Assets/SignIn/fb.png" alt="Facebook" width={22} height={22} className="object-contain grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all" />
-            </button>
-            <button className="w-[52px] h-[52px] flex items-center justify-center border border-[#E8E8EA] rounded-full hover:bg-gray-50 transition-colors group">
-              <Image src="/Assets/SignIn/google.png" alt="Google" width={22} height={22} className="object-contain grayscale group-hover:grayscale-0 opacity-70 group-hover:opacity-100 transition-all" />
-            </button>
-          </div>
-
-          <p className="text-center mt-12 text-[14px] text-[#7F879E]">
-            New user?{' '}
-            <Link href="/signup" className="font-medium text-[#0055FF] hover:underline">
-              Create an account
+          <p className="text-center mt-16 text-[14px] text-[#7F879E]">
+            Already have an account?{' '}
+            <Link href="/signin" className="font-medium text-[#0055FF] hover:underline">
+              Login
             </Link>
           </p>
 

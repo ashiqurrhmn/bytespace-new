@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 export default function Footer() {
   const pathname = usePathname();
 
-  if (pathname === "/signin") return null;
+  if (pathname === "/signin" || pathname === "/signup") return null;
 
   const footerLinks = [
     {

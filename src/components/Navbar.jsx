@@ -9,7 +9,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  if (pathname === "/signin") return null;
+  if (pathname === "/signin" || pathname === "/signup") return null;
 
   return (
     <header className="relative w-full z-50">
@@ -36,7 +36,7 @@ export default function Navbar() {
         {/* Right Side Actions – Desktop */}
         <div className="hidden md:flex items-center gap-6">
           <Link href="/signin" className="text-[16px] font-normal hover:opacity-80 transition-opacity">Sign In</Link>
-          <Link href="/join" className="text-[16px] font-normal hover:opacity-80 transition-opacity">Join Us</Link>
+          <Link href="/signup" className="text-[16px] font-normal hover:opacity-80 transition-opacity">Join Us</Link>
           <button className="flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Shopping Cart">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
@@ -70,7 +70,7 @@ export default function Navbar() {
           <Link href="/creators" onClick={() => setMenuOpen(false)} className="w-full text-center text-white text-lg font-normal py-3 rounded-xl hover:bg-white/10 transition-colors">Creators</Link>
           <div className="w-full h-px bg-white/15 my-2" />
           <Link href="/signin" onClick={() => setMenuOpen(false)} className="w-full text-center text-white text-lg font-normal py-3 rounded-xl hover:bg-white/10 transition-colors">Sign In</Link>
-          <Link href="/join" onClick={() => setMenuOpen(false)} className="w-full text-center text-[#003BE2] text-lg font-semibold py-3 rounded-xl bg-[#D4FB20] hover:bg-[#c8ec1a] transition-colors">Join Us</Link>
+          <Link href="/signup" onClick={() => setMenuOpen(false)} className="w-full text-center text-[#003BE2] text-lg font-semibold py-3 rounded-xl bg-[#D4FB20] hover:bg-[#c8ec1a] transition-colors">Join Us</Link>
         </nav>
       </div>
     </header>
