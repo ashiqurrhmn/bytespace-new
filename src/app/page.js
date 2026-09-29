@@ -5,6 +5,7 @@ import SkillsSection from "@/components/SkillsSection";
 import GrowthSection from "@/components/GrowthSection";
 import CreatorSection from "@/components/CreatorSection";
 import DiscoverSection from "@/components/DiscoverSection";
+import Footer from "@/components/Footer";
   
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <GrowthSection />
       <CreatorSection />
       <DiscoverSection />
+      <Footer />
     </>
   );
 }
