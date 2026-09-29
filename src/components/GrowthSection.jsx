@@ -43,7 +43,7 @@ export default function GrowthSection() {
             Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
           </p>
           
-          <div className="flex items-center gap-10 sm:gap-14 mt-10">
+          <div className="flex flex-wrap items-center gap-6 sm:gap-10 md:gap-14 mt-8 sm:mt-10">
             <div className="flex flex-col">
               <span className="font-[var(--font-poppins)] text-[32px] sm:text-[38px] font-bold text-[#0055FF]">12K</span>
               <span className="font-satoshi text-[14px] sm:text-[15px] text-[#7F879E] mt-1">Students</span>
@@ -60,7 +60,7 @@ export default function GrowthSection() {
         </div>
 
         {/* Right Composition */}
-        <div className="flex-1 relative w-full h-[500px] sm:h-[px] flex justify-center items-end md:items-center mt-12 md:mt-0">
+        <div className="flex-1 relative w-full h-[500px] sm:h-[600px] flex justify-center items-end md:items-center mt-12 md:mt-0">
           
           {/* Background Card (Learn Figma) */}
           <div className="absolute left-[0%] md:left-[5%] lg:-left-[5%] top-[10%] md:top-[1%] w-[260px] sm:w-[370px] bg-white border border-[#E8E8EA] rounded-[24px] p-3.5 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] z-0 hidden sm:block">
@@ -100,7 +100,7 @@ export default function GrowthSection() {
             alt="Student" 
             width={1200} 
             height={800} 
-            className="absolute bottom-[-30%] right-[-12%] z-10 w-[670px] max-w-[800px] drop-shadow-2xl" 
+            className="absolute bottom-[-10%] sm:bottom-[-20%] md:bottom-[-30%] right-[-5%] sm:right-[-10%] md:right-[-12%] z-10 w-[380px] sm:w-[500px] md:w-[670px] max-w-[800px] drop-shadow-2xl" 
           />
 
           {/* Floating Progress Card with Spiral */}
@@ -128,13 +128,13 @@ export default function GrowthSection() {
       </div>
 
       {/* ===== MANAGE PART ===== */}
-      <div className="relative z-[2] w-full max-w-[1240px] px-6 mx-auto flex flex-col md:flex-row items-center justify-between gap-16 lg:gap-24">
+      <div className="relative z-[2] w-full max-w-[1240px] px-6 mx-auto flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-24">
         
         {/* Left Composition (Images) */}
-        <div className="flex-1 relative w-full h-[500px] sm:h-[650px] flex justify-center items-center">
+        <div className="flex-1 relative w-full h-[350px] sm:h-[500px] md:h-[650px] flex justify-center items-center order-2 md:order-1 mt-8 md:mt-0">
           
           {/* Main Image */}
-          <div className="relative top-[10%] z-10 w-[90%] max-w-[900px]">
+          <div className="relative z-10 w-[95%] sm:w-[90%] max-w-[900px]">
             <Image 
               src="/Assets/Manage-section/Image.png" 
               alt="Manager" 
@@ -145,7 +145,7 @@ export default function GrowthSection() {
           </div>
 
           {/* Revenue Card (Top Left) */}
-          <div className="absolute left-[10%] sm:-left-[5%] lg:left-[10%] top-[15%] z-0 w-[140px] sm:w-[190px] hover:-translate-y-2 transition-transform duration-300">
+          <div className="absolute left-[5%] lg:left-[10%] top-[10%] sm:top-[15%] z-0 w-[120px] sm:w-[160px] lg:w-[190px] hover:-translate-y-2 transition-transform duration-300">
             <Image 
               src="/Assets/Manage-section/revenue.png" 
               alt="Total Revenue" 
@@ -156,7 +156,7 @@ export default function GrowthSection() {
           </div>
 
           {/* Year to Date Card (Bottom Left) */}
-          <div className="absolute left-[2%] sm:left-[0%] lg:-left-[5%] top-[45%] sm:top-[48%] z-0 w-[110px] sm:w-[140px] hover:-translate-y-2 transition-transform duration-300">
+          <div className="absolute left-[0%] lg:-left-[5%] top-[55%] sm:top-[48%] z-0 w-[90px] sm:w-[120px] lg:w-[140px] hover:-translate-y-2 transition-transform duration-300">
             <Image 
               src="/Assets/Manage-section/due.png" 
               alt="Year to Date" 
@@ -167,7 +167,7 @@ export default function GrowthSection() {
           </div>
 
           {/* Spiral (Right side of manager) */}
-          <div className="absolute right-[12%] sm:right-[15%] lg:right-[10%] top-[30%] sm:top-[22%] z-30 w-[90px] h-[90px] sm:w-[230px] sm:h-[230px]">
+          <div className="absolute right-[12%] lg:right-[10%] top-[25%] sm:top-[22%] z-30 w-[80px] sm:w-[150px] lg:w-[230px] aspect-square">
             <Image 
               src="/Assets/Manage-section/Frame.png" 
               alt="Green Spiral" 
@@ -178,7 +178,7 @@ export default function GrowthSection() {
           </div>
 
           {/* Happy Students Card (Bottom Right) */}
-          <div className="absolute right-[-2%] sm:right-[5%] lg:right-[5%] bottom-[15%] sm:bottom-[18%] z-20 w-[180px] sm:w-[250px] hover:-translate-y-2 transition-transform duration-300">
+          <div className="absolute right-[0%] lg:right-[5%] bottom-[10%] sm:bottom-[15%] z-20 w-[150px] sm:w-[200px] lg:w-[250px] hover:-translate-y-2 transition-transform duration-300">
             <Image 
               src="/Assets/Manage-section/Auto Layout Vertical.png" 
               alt="Happy Students" 
@@ -191,11 +191,11 @@ export default function GrowthSection() {
         </div>
 
         {/* Right Content */}
-        <div className="flex-1 max-w-[500px] z-10 pl-0 md:pl-4">
-          <h2 className="font-[var(--font-poppins)] text-[38px] sm:text-[44px] md:text-[48px] font-bold text-[#1A1D27] leading-[1.2]">
+        <div className="flex-1 max-w-[500px] z-10 pl-0 md:pl-4 order-1 md:order-2">
+          <h2 className="font-[var(--font-poppins)] text-[36px] sm:text-[42px] md:text-[48px] font-bold text-[#1A1D27] leading-[1.2]">
             Create & Manage<br />Courses Easily.
           </h2>
-          <p className="font-satoshi mt-6 sm:mt-8 text-[15px] sm:text-[16px] text-[#7F879E] leading-relaxed">
+          <p className="font-satoshi mt-6 text-[15px] sm:text-[16px] text-[#7F879E] leading-relaxed">
             <strong className="text-[#1A1D27] font-bold">ByteSpace</strong> supports individuals or entities in the creation, publication, and administration of educational courses.
           </p>
           

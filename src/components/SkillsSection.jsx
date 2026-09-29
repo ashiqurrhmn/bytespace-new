@@ -121,7 +121,7 @@ export default function SkillsSection() {
             <div key={course.id} className="bg-white border border-[#CED0D3] rounded-[28px] p-4 sm:p-4 hover:shadow-xl hover:shadow-black/5 transition-all duration-300">
               
               {/* Image Container */}
-              <div className="relative w-[341px] h-[196] aspect-[1.45] rounded-[20px] overflow-hidden">
+              <div className="relative w-full aspect-[1.45] rounded-[20px] overflow-hidden">
                 <Image 
                   src={course.image} 
                   alt={course.title} 

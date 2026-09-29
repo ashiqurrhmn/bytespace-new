@@ -12,10 +12,10 @@ export default function SignIn() {
       }} />
       
       {/* Container to restrict max width if needed, or just let the columns take the space */}
-      <div className="w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between w-full min-h-screen">
+      <div className="w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row lg:items-center justify-between min-h-screen">
         
       {/* Left Side - Visuals & Text */}
-      <div className="flex-1 flex flex-col px-8 sm:px-16 lg:px-24 xl:px-32 relative z-10 pt-10 lg:pt-10 pb-12 h-full justify-center">
+      <div className="flex-1 w-full flex flex-col px-6 sm:px-16 lg:px-24 xl:px-32 relative z-10 pt-20 lg:pt-10 pb-12 h-full lg:justify-center">
         
         {/* Logo */}
         <Link href="/" className="mb-12 lg:mb-10">
@@ -65,7 +65,7 @@ export default function SignIn() {
       </div>
 
       {/* Right Side - Form Card */}
-      <div className="flex-1 flex items-center justify-center lg:justify-end px-6 sm:px-16 lg:pr-24 xl:pr-32 relative z-10 py-12">
+      <div className="flex-1 w-full flex items-center justify-center lg:justify-end px-6 sm:px-16 lg:pr-24 xl:pr-32 relative z-10 py-12">
         <div className="w-full max-w-[500px] bg-white rounded-[32px] p-8 sm:p-12 shadow-2xl">
           
           <span className="block text-[14px] font-medium text-[#0055FF] mb-2">Sign In</span>
