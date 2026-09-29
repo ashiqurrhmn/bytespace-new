@@ -11,7 +11,7 @@ const categories = [
 
 export default function ExploreSection() {
   return (
-    <section className="w-full bg-white flex flex-col items-center">
+    <section className="w-full bg-white pb-24 flex flex-col items-center">
       <div className="w-full max-w-[1240px] px-6">
         
         {/* Heading Section */}
